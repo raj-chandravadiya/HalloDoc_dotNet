@@ -1,0 +1,98 @@
+.navbar{
+    background-color: white;
+    /* position: fixed;
+    top: 0px;
+    width: 100%; */
+}
+.heading{
+    box-shadow:rgb(20, 12, 0);
+}
+a{
+    text-decoration: none;
+    color:#10bce9;
+}
+.head{
+    font-size: 30px;
+    font-weight: bold;
+}
+.button{
+    padding: 13px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid;
+}
+#btn_1{
+    color:#4367d3;
+    border-color:#4367d3 ;
+    background-color:  #e8eaf1;
+}
+#btn_1:hover{
+    color:#ffffff;
+    border-color:#163592 ;
+    background-color:  #4367d3;
+}
+#btn_2{
+    color:#00adef;
+    background-color: #e5f3f8;
+    border-color: #00adef;
+}
+#btn_2:hover{
+    color:#ffffff;
+    background-color: #028dc4;
+    border-color: #176480;
+}
+#btn_3{
+    color:#228b22;
+    border-color: #228b22;
+    background-color:#e8f0e8;
+}
+#btn_3:hover{
+    color:#ffffff;
+    border-color: #0f690f;
+    background-color:#228b22;
+}
+#btn_4{
+    color:#d90f81;
+    border-color:#d90f81;
+    background-color:#f6e6ef;
+}
+#btn_4:hover{
+    color:#ffffff;
+    border-color:#750e49;
+    background-color:#d90f81;
+}
+footer{
+    position:fixed;
+    padding: 20px;
+    bottom: 0px;
+    background-color: #282828;
+    color: white;
+}
+.footer_links {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.footer_links:hover {
+    color: #10BCE9;
+}
+@media (max-width: 991px) {
+    .bg {
+        position: absolute;
+        z-index: -1;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url("/images/SRS Screen Shorts/11116016_415.jpg") center;
+        opacity: .4;
+        background-size: cover;
+        filter: blur(2px);
+    }
+}
+.back_btn:hover{
+    color: #ffffff;
+}

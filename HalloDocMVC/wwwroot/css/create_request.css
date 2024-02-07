@@ -1,0 +1,99 @@
+a{
+    text-decoration: none;
+    color:#10bce9;
+}
+.input_labels{
+    color: gray;
+    left: 10px !important;
+}
+.inputs:focus{
+    border: 1px solid;
+    border-color: #10BCE9;
+    box-shadow: none;
+}
+
+.temp:focus-within label{
+    color: #10BCE9 !important;
+}
+
+
+.patient-upload{
+   border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    display: flex;
+}
+.file-upload
+{
+  /* display: block; */
+  margin: 0 auto;
+  /* color: #fff; */
+}
+#fileLoader {
+    position: absolute;
+    left: -9999px;
+}
+label[for="fileLoader"]{
+  padding:0.5em;  
+  background: #01bce9;
+  cursor:pointer;
+  /* float:left; */
+  color: #ffffff;
+  float: right;
+}
+#filename{
+  padding:0.5em;
+  /* width:93%; */
+  /* white-space: nowrap; */
+  /* overflow:hidden; */
+  /* background:#739BAE; */
+  float:left;
+  /*  flex-grow: 1;  */
+}
+
+.iti {
+    position: relative;
+    height: 100%; 
+    width: 100%;
+    display: inline-block;
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+.iti__country-list {
+    z-index: 2;
+}
+
+.last_buttons_1{
+    color: #ffffff;
+}
+
+footer{
+    position:relative;
+    padding: 20px;
+    bottom: 0px;
+    
+    background-color: #282828;
+    color: white;
+    z-index:5;
+}
+.footer_links {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.footer_links:hover {
+    color: #10BCE9;
+}
+.back_btn:hover{
+    /* color: #add8e6; */
+    /* color: #83a3ad; */
+    color: white;
+}
+#dark_btn:hover{
+    color: white;
+}

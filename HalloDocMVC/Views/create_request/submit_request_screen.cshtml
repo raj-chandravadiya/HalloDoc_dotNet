@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "_createRequest";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col m-4 d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-info">
+                <div class="d-flex">
+                    <a asp-controller="patient_Site" asp-action="patientSite" class="back_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                             fill="currentColor">
+                            <path d="m142-480 294 294q15 15 14.5 35T435-116q-15 15-35 15t-35-15L57-423q-12-12-18-27t-6-30q0-15 6-30t18-27l308-308q15-15 35.5-14.5T436-844q15 15 15 35t-15 35L142-480Z" />
+                        </svg>
+                        Back
+                    </a>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-6">
+            <div class="justify-content-center d-flex mb-4">
+                <h4 class="head">I am a...</h4>
+            </div>
+            <div>
+                <a asp-controller="create_request" asp-action="create_patient_request" class="text-decoration-none">
+                    <div class="button" id="btn_1">Patient</div>
+                </a>
+                <a asp-controller="create_request" asp-action="create_familyFriend_request" class="text-decoration-none">
+                    <div class="button" id="btn_2">Family / Friend</div>
+                </a>
+                <a asp-controller="create_request" asp-action="create_concierge_request" class="text-decoration-none">
+                    <div class="button" id="btn_3">Concierge</div>
+                </a>
+                <a asp-controller="create_request" asp-action="create_businessPartner_request" class="text-decoration-none">
+                    <div class="button" id="btn_4">Business Partners</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

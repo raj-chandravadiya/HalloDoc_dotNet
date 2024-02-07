@@ -1,0 +1,154 @@
+﻿@{
+    Layout = "_createRequest";
+}
+<div class="container">
+    <div class="row">
+        <div class="col m-4 d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-info">
+                <div class="d-flex">
+                    <a asp-controller="create_request" asp-action="submit_request_screen" class="back_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                             fill="currentColor">
+                            <path d="m142-480 294 294q15 15 14.5 35T435-116q-15 15-35 15t-35-15L57-423q-12-12-18-27t-6-30q0-15 6-30t18-27l308-308q15-15 35.5-14.5T436-844q15 15 15 35t-15 35L142-480Z" />
+                        </svg>
+                        Back
+                    </a>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="container mb-5 pb-5 request_form shadow-lg px-4">
+
+        <div class="row">
+            <h3 class="mt-4">Business Information</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Your First Name</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="tel" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Your Last Name</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 temp mt-3">
+                <div class="form-floating d-flex h-100">
+                    <input id="family_phone" class="py-3 form-control inputs" type="tel" name="phone" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Your Email</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Business Property Name</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Case Number (Optional)</label>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <h3 class="mt-4">Patient Information</h3>
+        </div>
+        <div class="row">
+            <div class="mt-3 form-floating temp">
+                <textarea type="text-area" class="form-control inputs" style="height: 125px;"
+                          placeholder="name@example.com"></textarea>
+                <label for="floatingInput" class="input_labels text-wrap">
+                    Enter Brief Details of Symtoms
+                    (Optional)
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">First Name</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Last Name</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3 ">
+                <input type="date" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="imput_labels ms-2">Date</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3 class="mt-4">Patient Contact Information</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-3 temp form-floating">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Email</label>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 temp mt-3">
+                <div class="form-floating d-flex h-100">
+                    <input id="patient_phone" class="py-3 form-control inputs" type="tel" name="phone" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3 class="mt-4">Patient Location</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Street</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="tel" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">City</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">State</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Zip Code</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
+                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <label for="floatingInput" class="input_labels">Room # / Suite (Optional)</label>
+            </div>
+        </div>
+
+
+
+        <div class="mt-4 text-end ">
+            <button class="btn btn-info last_buttons_1 mx-2" type="submit">Submit</button>
+            <button class="btn btn-outline-info last_buttons_2 mx-2" type="reset">Cancle</button>
+        </div>
+    </div>
+</div>
+@section businessPartner{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script>
+        var phoneInputField = document.querySelector("#family_phone");
+        var phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+        var phoneInputField = document.querySelector("#patient_phone");
+        var phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+}
