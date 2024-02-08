@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gHQBB67ZJRUhygnY2/lO2L/FMBtW40w1M0jiJo7vHjzbN2wG+jDUOMo6jZXKvRKdpUn2f9qV/IOUmWxOQsW1gw==",
+  "dgSpecHash": "kTDpce6d4228hv0dNZbLD5S3/JJEfeQ1ciCWFF6fPod7BfG6RPyf1533bV0w/G43SuzL6rnKbPJafvyN3BBoQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pci224\\Desktop\\HalloDocMVC\\HalloDocMVC.csproj",
+  "projectFilePath": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocMVC\\HalloDocMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pci224\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\pci224\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

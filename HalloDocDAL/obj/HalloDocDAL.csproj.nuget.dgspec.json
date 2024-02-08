@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pci224\\Desktop\\HalloDocDAL\\HalloDocDAL.csproj": {}
+    "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocDAL\\HalloDocDAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pci224\\Desktop\\HalloDocDAL\\HalloDocDAL.csproj": {
+    "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocDAL\\HalloDocDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pci224\\Desktop\\HalloDocDAL\\HalloDocDAL.csproj",
+        "projectUniqueName": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocDAL\\HalloDocDAL.csproj",
         "projectName": "HalloDocDAL",
-        "projectPath": "C:\\Users\\pci224\\Desktop\\HalloDocDAL\\HalloDocDAL.csproj",
+        "projectPath": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocDAL\\HalloDocDAL.csproj",
         "packagesPath": "C:\\Users\\pci224\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pci224\\Desktop\\HalloDocDAL\\obj\\",
+        "outputPath": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "krOWFxbmMVIMhP0RHx8tpJFTaOxY6xWBpKZ6gPweJthGolGimCVb1VXMTpQ/nvfDlp9tmVrmYQck90Bkg4Xynw==",
+  "dgSpecHash": "Hk6gdAWa5VJ2ooW+rLJEGsL9oqTftT6VsXiecsXisdEllAjoqSkqVFu8Th9l33nITaiLyp5VZq0u+yi0knWRfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pci224\\Desktop\\HalloDocDAL\\HalloDocDAL.csproj",
+  "projectFilePath": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocDAL\\HalloDocDAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pci224\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\pci224\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.15\\microsoft.entityframeworkcore.7.0.15.nupkg.sha512",

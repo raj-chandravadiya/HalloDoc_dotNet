@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Request;
+@{
     Layout = "_createRequest";
 }
 <div class="container">
@@ -22,13 +23,15 @@
         <div class="row">
             <h3 class="mt-4">Business Information</h3>
         </div>
+        <form method="post">
         <div class="row">
+
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="Firstname" type="text" class="form-control inputs" id="floatingInput">
                 <label for="floatingInput" class="input_labels">Your First Name</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="tel" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="Lastname" type="text" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">Your Last Name</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 temp mt-3">
@@ -128,6 +131,7 @@
             <button class="btn btn-info last_buttons_1 mx-2" type="submit">Submit</button>
             <button class="btn btn-outline-info last_buttons_2 mx-2" type="reset">Cancle</button>
         </div>
+        </form>
     </div>
 </div>
 @section businessPartner{
