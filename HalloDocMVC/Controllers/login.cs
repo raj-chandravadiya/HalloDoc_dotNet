@@ -23,10 +23,10 @@ namespace HalloDocMVC.Controllers
         }
 
         [HttpPost]
-        
         public IActionResult login_page(Aspnetuser loginUser)
         {
             var obj = _context.Aspnetusers.ToList();
+            
 
             foreach (var item in obj)
             {

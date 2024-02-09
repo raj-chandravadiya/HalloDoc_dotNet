@@ -402,8 +402,6 @@ public partial class ApplicationDbContext : DbContext
         {
             entity.HasKey(e => e.Userid).HasName("User_pkey");
 
-            entity.Property(e => e.Userid).ValueGeneratedNever();
-
             entity.HasOne(d => d.Aspnetuser).WithMany(p => p.Users).HasConstraintName("User_aspnetuserid_fkey");
 
             entity.HasOne(d => d.Region).WithMany(p => p.Users).HasConstraintName("User_regionid_fkey");

@@ -1,4 +1,4 @@
-﻿@model Request
+﻿@model HalloDocDAL.ViewModel.PatientRequestViewModel;
 @{
     Layout = "_createRequest";
 }
@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container mb-5 pb-5 request_form shadow-lg px-4">
-        <form method="post"  id=1>
+        <form method="post"  >
 
         <div class="row">
             <h3 class="mt-4">Patient Information</h3>
@@ -36,17 +36,17 @@
             </div>
         </div>
         <div class="row">
-                <label asp-for="Requestid" value="2" hidden></label>
+                
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input asp-for="Firstname" type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="FirstName" type="text" required class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">First Name</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input asp-for="Lastname" type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="LastName" type="text" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">Last Name</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3 ">
-                <input type="date" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="DOB" type="date" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels ms-2">Date</label>
             </div>
         </div>
@@ -56,13 +56,13 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 mt-3 temp form-floating">
-                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="Email" type="email" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">Email</label>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 temp mt-3">
                 <div class="form-floating d-flex h-100">
-                    <input id="phone" class="py-3 form-control inputs" type="tel" name="phone" />
+                    <input asp-for="PhoneNumber" id="phone" class="py-3 form-control inputs" type="tel"/>
                 </div>
             </div>
         </div>
@@ -72,23 +72,23 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="Street" type="text" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">Street</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="tel" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="City" type="text" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">City</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="State" type="text" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">State</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="Zipcode" type="number" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">Zip Code</label>
             </div>
             <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                <input type="text" class="form-control inputs" placeholder="name@example.com">
+                <input asp-for="Room" type="text" class="form-control inputs" placeholder="name@example.com">
                 <label for="floatingInput" class="input_labels">Room # / Suite (Optional)</label>
             </div>
         </div>
