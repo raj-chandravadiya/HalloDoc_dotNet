@@ -629,6 +629,10 @@
       "PackagePath": "staticwebassets\\css\\login_page.css"
     },
     {
+      "Id": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocMVC\\wwwroot\\css\\patientDashboard.css",
+      "PackagePath": "staticwebassets\\css\\patientDashboard.css"
+    },
+    {
       "Id": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocMVC\\wwwroot\\css\\patient_site.css",
       "PackagePath": "staticwebassets\\css\\patient_site.css"
     },

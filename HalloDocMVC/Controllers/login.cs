@@ -32,7 +32,7 @@ namespace HalloDocMVC.Controllers
             {
                 if(loginUser.Username == item.Username && loginUser.Passwordhash == item.Passwordhash)
                 {
-                    return RedirectToAction("patientSite", "patient_Site");
+                    return RedirectToAction("patientDashboard", "patientDash");
                 }
             }
             //ModelState.AddModelError("wrong creential", "Invalide");
@@ -43,5 +43,6 @@ namespace HalloDocMVC.Controllers
         {
             return View();
         }
+
     }
 }
