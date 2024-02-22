@@ -26,24 +26,24 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="FriendFirstName" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="FriendFirstName" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Your First Name</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="FriendLastName" type="tel" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="FriendLastName" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Your Last Name</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 temp mt-3">
                     <div class="form-floating d-flex h-100">
-                        <input asp-for="FriendPhoneNo" id="family_phone" class="py-3 form-control inputs" type="tel" name="phone" />
+                        <input asp-for="FriendPhoneNo" id="family_phone" class="py-3 form-control inputs" type="tel" name="phone" required />
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="FriendEmail" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="FriendEmail" type="email" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Your Email</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="FriendRelation" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="FriendRelation" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Relation with Patient</label>
                 </div>
             </div>
@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="mt-3 form-floating temp">
                     <textarea asp-for="PatientRequest.symptoms" type="text-area" class="form-control inputs" style="height: 125px;"
-                              placeholder="name@example.com"></textarea>
+                              placeholder="name@example.com" required></textarea>
                     <label for="floatingInput" class="input_labels text-wrap">
                         Enter Brief Details of Symtoms
                         (Optional)
@@ -63,15 +63,15 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.FirstName" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.FirstName" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">First Name</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.LastName" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.LastName" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Last Name</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3 ">
-                    <input asp-for="PatientRequest.DOB" type="date" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.DOB" type="date" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="imput_labels ms-2">Date</label>
                 </div>
             </div>
@@ -81,13 +81,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 mt-3 temp form-floating">
-                    <input asp-for="PatientRequest.Email" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.Email" type="email" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Email</label>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-12 temp mt-3">
                     <div class="form-floating d-flex h-100 ">
-                        <input asp-for="PatientRequest.PhoneNumber" id="patient_phone" class="py-3 form-control inputs" type="tel" name="phone" />
+                        <input asp-for="PatientRequest.PhoneNumber" id="patient_phone" class="py-3 form-control inputs" type="tel" name="phone" required />
                     </div>
                 </div>
             </div>
@@ -97,23 +97,23 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.Street" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.Street" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Street</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.City" type="tel" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.City" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">City</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.State" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.State" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">State</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.Zipcode" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.Zipcode" type="number" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Zip Code</label>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 form-floating temp mt-3">
-                    <input asp-for="PatientRequest.Room" type="text" class="form-control inputs" placeholder="name@example.com">
+                    <input asp-for="PatientRequest.Room" type="text" class="form-control inputs" placeholder="name@example.com" required>
                     <label for="floatingInput" class="input_labels">Room # / Suite (Optional)</label>
                 </div>
             </div>

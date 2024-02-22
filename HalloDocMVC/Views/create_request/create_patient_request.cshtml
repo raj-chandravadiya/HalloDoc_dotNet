@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container mb-5 pb-5 request_form shadow-lg px-4">
-        <form method="post">
+        <form enctype="multipart/form-data" method="post">
         <div class="row">
             <h3 class="mt-4">Patient Information</h3>
         </div>
@@ -95,7 +95,8 @@
         <div class="row">
             <h3 class="mt-4">Upload Photo or Document</h3>
         </div>
-        <div class="row ps-2 inputs">
+            <input asp-for="uploadFile" class="form-control form-control-lg" id="formFileLg" type="file" />
+        @* <div class="row ps-2 inputs">
             <div class="col mt-3 patient-upload d-flex input-group p-0">
                 <div class="file-upload flex-grow-1 align-items-center d-flex justify-content-between">
                     <span class="input_labels ms-2">Select your file</span>
@@ -112,7 +113,7 @@
                     <input type="file" id="fileLoader">
                 </div>
             </div>
-        </div>
+        </div> *@
 
         <div class="mt-4 text-end ">
             <button class="btn btn-info last_buttons_1 mx-2" type="submit">Submit</button>

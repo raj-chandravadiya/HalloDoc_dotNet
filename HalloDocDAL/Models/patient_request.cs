@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace HalloDocDAL.Models
 {
-    
-
-
+   
     public class patient_request
     {
         public string? symptoms { get; set; }

@@ -885,6 +885,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocMVC\\wwwroot\\uploads\\c9323564-e09e-482f-b23f-1cd171eeb1e4Session 2 (1).txt",
+      "PackagePath": "staticwebassets\\uploads\\c9323564-e09e-482f-b23f-1cd171eeb1e4Session 2 (1).txt"
+    },
+    {
+      "Id": "C:\\Users\\pci224\\Desktop\\HalloDoc-dotNet\\HalloDocMVC\\wwwroot\\uploads\\fb262d62-78ae-4bc2-8e79-2f507edf6606Session 2 (1).txt",
+      "PackagePath": "staticwebassets\\uploads\\fb262d62-78ae-4bc2-8e79-2f507edf6606Session 2 (1).txt"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.HalloDocMVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

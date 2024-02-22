@@ -2,8 +2,6 @@
     font-family: 'poppins';
 }
 
-
-
 #darkmode:hover svg {
     fill: white;
 }
@@ -48,5 +46,15 @@ tr td:first-child {
 }
 
 .btn-outline-info:hover {
+    color: white;
+}
+
+.create-request-active{
+    background-color:#10BCE9;
+    color:white;
+}
+
+.create-request-active:hover {
+    background-color: #10BCE9;
     color: white;
 }

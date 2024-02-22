@@ -47,6 +47,7 @@ namespace HalloDocMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult create_patient_request(PatientRequestViewModel obj)
         {
+
             if (ModelState.IsValid)
             {
                 var newaspNetUser = new Aspnetuser()
@@ -99,7 +100,39 @@ namespace HalloDocMVC.Controllers
                 _context.SaveChanges();
 
 
-                return RedirectToAction("login_page", "login");
+
+                if (obj.uploadFile != null)
+                {
+                    Guid myuuid = Guid.NewGuid();
+                    var filename = Path.GetFileName(obj.uploadFile.FileName);
+                    var FinalFileName = myuuid.ToString() + filename;
+
+                    //path
+
+                    var filepath = Path.Combine(Environment.CurrentDirectory, "wwwroot", "uploads", FinalFileName);
+
+                    //copy in stream
+
+                    using (var str = new FileStream(filepath, FileMode.Create))
+                    {
+                        //copy file
+                        obj.uploadFile.CopyTo(str);
+                    }
+
+                    //STORE DATA IN TABLE
+                    var fileupload = new Requestwisefile()
+                    {
+
+                        Requestid = request.Requestid,
+                        Filename = FinalFileName,
+                        Createddate = DateTime.Now,
+                    };
+
+                    _context.Requestwisefiles.Add(fileupload);
+                    _context.SaveChanges();
+                }
+
+                return RedirectToAction("patientDashboard", "patientDash");
             }
             else
             {

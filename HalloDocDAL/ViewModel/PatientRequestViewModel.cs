@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace HalloDocDAL.ViewModel
 {
     public class PatientRequestViewModel
     {
+        public IFormFile? uploadFile { get; set; }   
         public string? symptoms { get; set; }
 
         public string? FirstName { get; set; }
