@@ -6,7 +6,7 @@
     fill: white;
 }
 
-.nav-tabs .active {
+.nav-item .active1 {
     border: none;
     color: #10bce9 !important;
     border-bottom: 5px solid #10bce9 !important;

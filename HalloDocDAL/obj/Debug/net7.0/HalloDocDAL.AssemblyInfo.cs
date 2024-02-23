@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HalloDocDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee5a530a33d8c9ba3eb51e0b0996f83821c0605b")]
 [assembly: System.Reflection.AssemblyProductAttribute("HalloDocDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HalloDocDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

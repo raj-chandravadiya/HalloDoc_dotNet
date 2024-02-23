@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Collections;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace HalloDocMVC.Controllers
 {
@@ -44,95 +46,182 @@ namespace HalloDocMVC.Controllers
 
 
         [HttpPost]
+        public JsonResult PatientCheckEmail(string email)
+        {
+            bool emailExists = _context.Users.Any(u => u.Email == email);
+            return Json(new { exists = emailExists });
+        }
+
+        public static string GenerateSHA256(string input)
+        {
+            var bytes = Encoding.UTF8.GetBytes(input);
+            using (var hashEngine = SHA256.Create())
+            {
+                var hashedBytes = hashEngine.ComputeHash(bytes, 0, bytes.Length);
+                var sb = new StringBuilder();
+                foreach (var b in hashedBytes)
+                {
+                    var hex = b.ToString("x2");
+                    sb.Append(hex);
+                }
+                return sb.ToString();
+            }
+        }
+
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult create_patient_request(PatientRequestViewModel obj)
         {
 
             if (ModelState.IsValid)
             {
-                var newaspNetUser = new Aspnetuser()
+                if (obj.Password != null)
                 {
-                    Id = Guid.NewGuid().ToString(),
-                    Username = obj.Email,
-                    Email = obj.Email,
-                    Createddate = DateTime.Now,
-                    Phonenumber = obj.PhoneNumber,
-                };
-                _context.Aspnetusers.Add(newaspNetUser);
-                _context.SaveChanges();
 
-                var user = new User()
-                {
-                    Aspnetuserid = newaspNetUser.Id,
-                    Firstname = obj.FirstName,
-                    Lastname = obj.LastName,
-                    Email = obj.Email,
-                    Mobile = obj.PhoneNumber,
-                    Createdby = newaspNetUser.Id,
-                    Createddate = DateTime.Now,
-                };
-                _context.Users.Add(user);
-                _context.SaveChanges();
-
-                var request = new Request
-                {
-                    Requesttypeid = 2,
-                    Userid = user.Userid,
-                    Firstname = obj.FirstName,
-                    Lastname = obj.LastName,
-                    Phonenumber = obj.PhoneNumber,
-                    Email = obj.Email,
-                    Status = 1,
-                    Createddate = DateTime.Now,
-                    //Isurgentemailsent = new BitArray(1),
-                };
-                _context.Requests.Add(request);
-                _context.SaveChanges();
-
-                var requestClient = new Requestclient
-                {
-                    Requestid = request.Requestid,
-                    Firstname = obj.FirstName,
-                    Lastname = obj.LastName,
-                    Phonenumber = obj.PhoneNumber,
-                };
-                _context.Requestclients.Add(requestClient);
-                _context.SaveChanges();
-
-
-
-                if (obj.uploadFile != null)
-                {
-                    Guid myuuid = Guid.NewGuid();
-                    var filename = Path.GetFileName(obj.uploadFile.FileName);
-                    var FinalFileName = myuuid.ToString() + filename;
-
-                    //path
-
-                    var filepath = Path.Combine(Environment.CurrentDirectory, "wwwroot", "uploads", FinalFileName);
-
-                    //copy in stream
-
-                    using (var str = new FileStream(filepath, FileMode.Create))
+                    var newaspNetUser = new Aspnetuser()
                     {
-                        //copy file
-                        obj.uploadFile.CopyTo(str);
-                    }
+                        Id = Guid.NewGuid().ToString(),
+                        Username = obj.Email,
+                        Email = obj.Email,
+                        Createddate = DateTime.Now,
+                        Phonenumber = obj.PhoneNumber,
+                        Passwordhash = GenerateSHA256(obj.Password),
+                    };
+                    _context.Aspnetusers.Add(newaspNetUser);
+                    _context.SaveChanges();
 
-                    //STORE DATA IN TABLE
-                    var fileupload = new Requestwisefile()
+                    var user = new User()
                     {
-
-                        Requestid = request.Requestid,
-                        Filename = FinalFileName,
+                        Aspnetuserid = newaspNetUser.Id,
+                        Firstname = obj.FirstName,
+                        Lastname = obj.LastName,
+                        Email = obj.Email,
+                        Mobile = obj.PhoneNumber,
+                        Createdby = newaspNetUser.Id,
                         Createddate = DateTime.Now,
                     };
-
-                    _context.Requestwisefiles.Add(fileupload);
+                    _context.Users.Add(user);
                     _context.SaveChanges();
+
+                    var request = new Request
+                    {
+                        Requesttypeid = 2,
+                        Userid = user.Userid,
+                        Firstname = obj.FirstName,
+                        Lastname = obj.LastName,
+                        Phonenumber = obj.PhoneNumber,
+                        Email = obj.Email,
+                        Status = 1,
+                        Createddate = DateTime.Now,
+                        //Isurgentemailsent = new BitArray(1),
+                    };
+                    _context.Requests.Add(request);
+                    _context.SaveChanges();
+
+                    var requestClient = new Requestclient
+                    {
+                        Requestid = request.Requestid,
+                        Firstname = obj.FirstName,
+                        Lastname = obj.LastName,
+                        Phonenumber = obj.PhoneNumber,
+                    };
+                    _context.Requestclients.Add(requestClient);
+                    _context.SaveChanges();
+
+                    if (obj.uploadFile != null)
+                    {
+                        Guid myuuid = Guid.NewGuid();
+                        var filename = Path.GetFileName(obj.uploadFile.FileName);
+                        var FinalFileName = myuuid.ToString() + filename;
+
+                        //path
+
+                        var filepath = Path.Combine(Environment.CurrentDirectory, "wwwroot", "uploads", FinalFileName);
+
+                        //copy in stream
+
+                        using (var str = new FileStream(filepath, FileMode.Create))
+                        {
+                            //copy file
+                            obj.uploadFile.CopyTo(str);
+                        }
+
+                        //STORE DATA IN TABLE
+                        var fileupload = new Requestwisefile()
+                        {
+
+                            Requestid = request.Requestid,
+                            Filename = FinalFileName,
+                            Createddate = DateTime.Now,
+                        };
+
+                        _context.Requestwisefiles.Add(fileupload);
+                        _context.SaveChanges();
+                    }
+                }
+                else
+                {
+                    User user = _context.Users.FirstOrDefault(u => u.Email == obj.Email);
+                    var request = new Request
+                    {
+                        Requesttypeid = 2,
+                        Userid = user.Userid,
+                        Firstname = obj.FirstName,
+                        Lastname = obj.LastName,
+                        Phonenumber = obj.PhoneNumber,
+                        Email = obj.Email,
+                        Status = 1,
+                        Createddate = DateTime.Now,
+                        //Isurgentemailsent = new BitArray(1),
+                    };
+                    _context.Requests.Add(request);
+                    _context.SaveChanges();
+
+                    var requestClient = new Requestclient
+                    {
+                        Requestid = request.Requestid,
+                        Firstname = obj.FirstName,
+                        Lastname = obj.LastName,
+                        Phonenumber = obj.PhoneNumber,
+                    };
+                    _context.Requestclients.Add(requestClient);
+                    _context.SaveChanges();
+
+                    if (obj.uploadFile != null)
+                    {
+                        Guid myuuid = Guid.NewGuid();
+                        var filename = Path.GetFileName(obj.uploadFile.FileName);
+                        var FinalFileName = myuuid.ToString() + filename;
+
+                        //path
+
+                        var filepath = Path.Combine(Environment.CurrentDirectory, "wwwroot", "uploads", FinalFileName);
+
+                        //copy in stream
+
+                        using (var str = new FileStream(filepath, FileMode.Create))
+                        {
+                            //copy file
+                            obj.uploadFile.CopyTo(str);
+                        }
+
+                        //STORE DATA IN TABLE
+                        var fileupload = new Requestwisefile()
+                        {
+
+                            Requestid = request.Requestid,
+                            Filename = FinalFileName,
+                            Createddate = DateTime.Now,
+                        };
+
+                        _context.Requestwisefiles.Add(fileupload);
+                        _context.SaveChanges();
+                    }
+
                 }
 
-                return RedirectToAction("patientDashboard", "patientDash");
+
+                return RedirectToAction("login_page", "login");
             }
             else
             {
@@ -221,7 +310,7 @@ namespace HalloDocMVC.Controllers
                 //Concierge concierge = new()
                 //{
                 //    Conciergename = crvm.ConciergeFirstName + " " + crvm.ConciergeLastName,
-                    
+
 
                 //};
                 Concierge concierge = new()
@@ -233,7 +322,7 @@ namespace HalloDocMVC.Controllers
                     State = crvm.ConciergeState,
                     Zipcode = crvm.ConciergeZip,
                     Createddate = DateTime.Now,
-                    
+
                 };
                 _context.Concierges.Add(concierge);
                 _context.SaveChanges();
@@ -289,9 +378,9 @@ namespace HalloDocMVC.Controllers
                 _context.Requestclients.Add(requestclient);
                 _context.SaveChanges();
 
-                Business business= new()
+                Business business = new()
                 {
-                    Name= cbpr.BusinessFirstName + " " + cbpr.BusinessLastName,
+                    Name = cbpr.BusinessFirstName + " " + cbpr.BusinessLastName,
                     Address1 = cbpr.BusinessPropertyName,
                     Createddate = DateTime.Now,
                 };
@@ -301,10 +390,10 @@ namespace HalloDocMVC.Controllers
                 Requestbusiness rb = new()
                 {
                     Requestid = r.Requestid,
-                    Businessid= business.Id
+                    Businessid = business.Id
                 };
                 _context.Requestbusinesses.Add(rb);
-                _context.SaveChanges(); 
+                _context.SaveChanges();
 
                 return RedirectToAction("login_page", "login");
             }

@@ -25,15 +25,15 @@ namespace HalloDocMVC.Controllers
         [HttpPost]
         public IActionResult login_page(Aspnetuser loginUser)
         {
-            var obj = _context.Aspnetusers.ToList();
-            
+            string passhash = create_request.GenerateSHA256(loginUser.Passwordhash);
 
-            foreach (var item in obj)
+            Aspnetuser aspnetuser = _context.Aspnetusers.FirstOrDefault(u => u.Username == loginUser.Username && u.Passwordhash == passhash);
+
+            if (aspnetuser != null)
             {
-                if(loginUser.Username == item.Username && loginUser.Passwordhash == item.Passwordhash)
-                {
-                    return RedirectToAction("patientDashboard", "patientDash");
-                }
+                User user = _context.Users.FirstOrDefault(u => u.Aspnetuserid == aspnetuser.Id);
+                HttpContext.Session.SetInt32("userId", user.Userid);
+                return RedirectToAction("patientDashboard", "patientDash");
             }
             //ModelState.AddModelError("wrong creential", "Invalide");
 
