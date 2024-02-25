@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\records.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\records.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\providers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\providers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\providerlocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\providerlocation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\partners.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\partners.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\admindash\\access.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\admindash\\access.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\views\\shared\\_admindashboardheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:views\\shared\\_admindashboardheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\wwwroot\\css\\admindashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:wwwroot\\css\\admindashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|c:\\users\\admin\\desktop\\hallodoc\\project\\hallodoc_dotnet\\hallodocmvc\\controllers\\admindashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9430B897-2C51-475A-8A8A-3DE640041A99}|HalloDocMVC.csproj|solutionrelative:controllers\\admindashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 386,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "partners.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\partners.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\partners.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\partners.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\partners.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwBsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:04:26.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "myProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\myProfile.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\myProfile.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\myProfile.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\myProfile.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwBcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:04:03.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "providerLocation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\providerLocation.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\providerLocation.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\providerLocation.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\providerLocation.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwBcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:04:37.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "providers.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\providers.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\providers.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\providers.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\providers.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:04:52.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "records.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\records.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\records.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\records.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\records.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwBsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:05:03.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "adminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\adminDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\adminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\adminDashboard.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\adminDashboard.cshtml",
+              "ViewState": "AQIAACcAAACA/v////8gwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:13:15.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "access.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\access.cshtml",
+              "RelativeDocumentMoniker": "Views\\adminDash\\access.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\adminDash\\access.cshtml",
+              "RelativeToolTip": "Views\\adminDash\\access.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAmwBgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T09:03:32.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_adminDashboardHeader.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\Shared\\_adminDashboardHeader.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_adminDashboardHeader.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Views\\Shared\\_adminDashboardHeader.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_adminDashboardHeader.cshtml",
+              "ViewState": "AQIAACwAAABgZ2ZmZuYswEEAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-25T06:47:41.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "adminDashboard.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\wwwroot\\css\\adminDashboard.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\adminDashboard.css",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\wwwroot\\css\\adminDashboard.css",
+              "RelativeToolTip": "wwwroot\\css\\adminDashboard.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-25T09:09:43.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "adminDashController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Controllers\\adminDashController.cs",
+              "RelativeDocumentMoniker": "Controllers\\adminDashController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HalloDoc\\Project\\HalloDoc_dotNet\\HalloDocMVC\\Controllers\\adminDashController.cs",
+              "RelativeToolTip": "Controllers\\adminDashController.cs",
+              "ViewState": "AQIAAA8AAADAZWZmZqYpwCAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T06:59:23.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
