@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HalloDocDAL
-build_property.ProjectDir = C:\Users\Admin\Desktop\HalloDoc\Project\HalloDoc_dotNet\HalloDocDAL\
+build_property.ProjectDir = C:\Users\pci224\Desktop\HalloDoc-dotNet\HalloDocDAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
